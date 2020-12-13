@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flux</title>
+</head>
+<body>
+	<h1>Flux</h1>
+	<p>
+	Type: Card<br>
+	Players: 1<br>
+	Mathematically optimize pairs of cards to balance your score and stay in the safe zone.<br>
+	</p>
+
+	<h3>Setup</h3>
+	<p>
+	Remove jacks from a standard 52 card deck and shuffle.<br>
+	Place one card face up; this forms the operation pile.<br>
+	</p>
+
+	<h3>Play</h3>
+	<p>
+	Place three cards face up in a row below the operation pile.<br>
+	Draw four cards into your hand.<br>
+	You will pair the cards in your hand with the placed cards so that your score stays between 1 and 24, over 6 rounds.<br>
+	The card's face determines its value, where A = 1, Q = 11, and K = 12.<br>
+	</p>
+
+	<p>
+	The laid out card of a pair is referred to as the alpha, and the card from your hand as the beta.<br>
+	If the alpha and the beta are opposite colors, the value of the beta is changed to its mirror value.<br>
+	To find this, subtract it from 13.<br>
+	For example: 3 becomes 10, 9 becomes 4, 6 becomes 7.<br>
+	The absolute difference between the pair's values is then calculated.<br>
+	For example: αA♣ and βQ♠ make 10, α7♦ and β8♣ make 2.<br>
+	The sum of all of the pairs' differences is your score for that round.<br>
+	</p>
+
+	<p>
+	The fourth card remaining in your hand is placed in the operation pile.<br>
+	If this card's color matches the previous top card, the next round's operation is addition.<br>
+	Otherwise, it is subtraction, which may be indicated by placing the card sideways.<br>
+	Once you have decided on a configuration, modify your total score using the operation in play.<br>
+	For the first round, the operation is addition.<br>
+	Discard the pairs, then place and draw alpha and beta cards as before.<br>
+	</p>
+</body>
+</html>
