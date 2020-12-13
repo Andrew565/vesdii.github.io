@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Flux</title>
+	<title>Delta</title>
 </head>
 <body>
-	<h1>Flux</h1>
+	<h1>Delta</h1>
 	<p>
 	Type: Card<br>
 	Players: 1<br>
@@ -21,7 +21,7 @@
 	<p>
 	Place three cards face up in a row below the operation pile.<br>
 	Draw four cards into your hand.<br>
-	You will pair the cards in your hand with the placed cards so that your score stays between 1 and 24, over 6 rounds.<br>
+	You will pair the cards in your hand with the placed cards so that your score stays between 1 and 24 (inclusive), over seven rounds.<br>
 	The card's face determines its value, where A = 1, Q = 11, and K = 12.<br>
 	</p>
 
@@ -37,11 +37,17 @@
 
 	<p>
 	The fourth card remaining in your hand is placed in the operation pile.<br>
-	If this card's color matches the previous top card, the next round's operation is addition.<br>
-	Otherwise, it is subtraction, which may be indicated by placing the card sideways.<br>
-	Once you have decided on a configuration, modify your total score using the operation in play.<br>
+	If this card's color matches the previous top card, the current round's operation is addition.<br>
+	Otherwise, it is subtraction.<br>
+	Once you have decided on your pairs and operation, modify your total score accordingly.<br>
 	For the first round, the operation is addition.<br>
-	Discard the pairs, then place and draw alpha and beta cards as before.<br>
+	For the last round, the operation is subtraction.<br>
+	Discard the pairs, then place and draw cards as before.<br>
+	</p>
+
+	<p>
+	If your score at the end of a round is less than 1 or greater than 24, the game is lost.<br>
+	If you complete the seventh round in the safe zone, the game is won.<br>
 	</p>
 </body>
 </html>
